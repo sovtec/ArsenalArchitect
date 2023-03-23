@@ -1,0 +1,14 @@
+name: 98
+version: '${project.version}'
+main: me.paradis.main._98
+api-version: 1.18
+commands:
+  test:
+    description: opens main gui
+    usage: /<command>
+  test1:
+    description: opens main gui
+    usage: /<command>
+  get:
+    description: makes get request
+    usage: /<command>
