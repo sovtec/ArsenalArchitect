@@ -30,9 +30,9 @@
               "state": {
                 "file": "main.canvas",
                 "viewState": {
-                  "x": 609.2359667359668,
-                  "y": 573.3056133056132,
-                  "zoom": -0.3950285858116305
+                  "x": 1459.0633471444235,
+                  "y": 686.4095639295078,
+                  "zoom": -0.3950285858116304
                 }
               }
             }
@@ -179,12 +179,12 @@
   },
   "active": "a023f45a8550847c",
   "lastOpenFiles": [
-    "matchsGui.md",
+    "itemSelectorGui.md",
     "main.canvas",
+    "matchsGui.md",
     "click book.md",
     "right click bookshelf.md",
     "main.md",
-    "itemSelectorGui.md",
     "enchantSelectorGui.md",
     "main asd.md",
     "123.md",
