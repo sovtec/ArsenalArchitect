@@ -15,9 +15,9 @@
               "state": {
                 "file": "obsidian/kitpvp98/base idea.canvas",
                 "viewState": {
-                  "x": -791.2358647429173,
-                  "y": 110.2846726252645,
-                  "zoom": -0.9754467656409624
+                  "x": 41.63244909250278,
+                  "y": -257.80144272255313,
+                  "zoom": -0.6421134323076292
                 }
               }
             }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian/kitpvp98/kitCreator.png",
+                "file": "obsidian/kitpvp98/base idea.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian/kitpvp98/kitCreator.png",
+                "file": "obsidian/kitpvp98/base idea.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian/kitpvp98/kitCreator.png"
+                "file": "obsidian/kitpvp98/base idea.canvas"
               }
             }
           }
