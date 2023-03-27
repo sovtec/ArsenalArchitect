@@ -28,11 +28,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "main.canvas",
+                "file": "base idea.canvas",
                 "viewState": {
-                  "x": 1459.0633471444235,
-                  "y": 686.4095639295078,
-                  "zoom": -0.3950285858116304
+                  "x": -205.4088417090435,
+                  "y": 709.6369106877345,
+                  "zoom": -0.02394416704115654
                 }
               }
             }
@@ -100,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "1b358a76f57aee89",
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "main.canvas",
+                "file": "base idea.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "main.canvas",
+                "file": "base idea.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "main.canvas"
+                "file": "base idea.canvas"
               }
             }
           }
@@ -177,10 +177,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a023f45a8550847c",
+  "active": "24ba2cc282d1c256",
   "lastOpenFiles": [
-    "itemSelectorGui.md",
     "main.canvas",
+    "base idea.canvas",
+    "kitCreator.png",
+    "kit_selector.png",
+    "idea.png",
+    "example_duels.png",
+    "itemSelectorGui.md",
     "matchsGui.md",
     "click book.md",
     "right click bookshelf.md",

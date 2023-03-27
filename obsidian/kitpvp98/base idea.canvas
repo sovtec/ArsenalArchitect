@@ -29,9 +29,9 @@
 		{"type":"text","text":"Duel Commands","id":"057a81b194d8e503","x":-438,"y":-520,"width":188,"height":61},
 		{"type":"text","text":"`/duel <playername>`","id":"a7fe7b15c4d8514e","x":-720,"y":-551,"width":200,"height":63},
 		{"type":"text","text":"Arena Selector GUI","id":"676fd86382ce6a7d","x":-445,"y":-649,"width":202,"height":60},
-		{"id":"1847a022be8c8266","x":-960,"y":-61,"width":400,"height":241,"type":"file","file":"98/obsidian/kitCreator.png"},
-		{"type":"file","file":"98/obsidian/kit_selector.png","id":"02944f187bfc382f","x":-679,"y":760,"width":400,"height":233},
-		{"id":"43daf5d89eca46f3","x":-30,"y":860,"width":400,"height":215,"type":"file","file":"98/obsidian/example_duels.png"}
+		{"type":"file","file":"kitCreator.png","id":"1847a022be8c8266","x":-960,"y":-61,"width":400,"height":241},
+		{"type":"file","file":"example_duels.png","id":"43daf5d89eca46f3","x":-30,"y":860,"width":400,"height":215},
+		{"type":"file","file":"kit_selector.png","id":"02944f187bfc382f","x":-680,"y":744,"width":400,"height":233}
 	],
 	"edges":[
 		{"id":"1285d2ffa977f449","fromNode":"904bafbac6f0a9ab","fromSide":"bottom","toNode":"bdc95cfb96f0f3b6","toSide":"top"},
