@@ -15,8 +15,8 @@
               "state": {
                 "file": "main.canvas",
                 "viewState": {
-                  "x": 646.0550935550935,
-                  "y": 132.79106029106018,
+                  "x": -50.8783783783783,
+                  "y": 216.94906444906437,
                   "zoom": -0.3950285858116305
                 }
               }
@@ -30,9 +30,9 @@
               "state": {
                 "file": "base idea.canvas",
                 "viewState": {
-                  "x": -205.4088417090435,
-                  "y": 709.6369106877345,
-                  "zoom": -0.02394416704115654
+                  "x": -99.79551786945365,
+                  "y": 449.5973897301146,
+                  "zoom": -0.8397209430244714
                 }
               }
             }
@@ -177,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24ba2cc282d1c256",
+  "active": "a023f45a8550847c",
   "lastOpenFiles": [
     "main.canvas",
     "base idea.canvas",
