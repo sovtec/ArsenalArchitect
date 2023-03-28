@@ -15,9 +15,9 @@
               "state": {
                 "file": "obsidian/kitpvp98/base idea.canvas",
                 "viewState": {
-                  "x": 41.63244909250278,
-                  "y": -257.80144272255313,
-                  "zoom": -0.6421134323076292
+                  "x": -838.6653994221401,
+                  "y": -201.20849526211663,
+                  "zoom": -0.3767224306867811
                 }
               }
             }
@@ -149,6 +149,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8bd942479dde7e4",
-  "lastOpenFiles": []
+  "active": "ccf90f233fda898d",
+  "lastOpenFiles": [
+    "target/classes/me/paradis/main/KitGui.class",
+    "target/classes/plugin.yml",
+    "target/classes/kit_gui.xml",
+    "target/classes/gui.xml",
+    "target/classes/config.yml",
+    "src/main/java/me/paradis/main/KitGui.java",
+    "target/classes/me/paradis/main/kitGuiClass.class",
+    "src/main/java/me/paradis/main/kitGuiClass.java",
+    "src/main/resources/kit_gui.xml",
+    "target/classes/me/paradis/main/kitCommandManager.class",
+    "target/classes/me/paradis/main/KitCommandManager.class",
+    "obsidian/kitpvp98/base idea.canvas"
+  ]
 }

@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 public class test1CommandManager implements CommandExecutor {
 
-    private final _98 instance = _98.getInstance();
+    private final arsenalArchitect instance = arsenalArchitect.getInstance();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -18,7 +18,7 @@ public class test1CommandManager implements CommandExecutor {
         Player p = (Player) sender;
         sender.sendMessage("test1");
 
-        InputStream stream = _98.getInstance().getResource("gui.xml");
+        InputStream stream = arsenalArchitect.getInstance().getResource("gui.xml");
         System.out.println(stream);
         ChestGui gui = ChestGui.load(this, stream);
 

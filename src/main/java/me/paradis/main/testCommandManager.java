@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class testCommandManager implements CommandExecutor {
 
-    private FileConfiguration c = _98.getInstance().getConfig();
+    private FileConfiguration c = arsenalArchitect.getInstance().getConfig();
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // TODO Auto-generated method stub

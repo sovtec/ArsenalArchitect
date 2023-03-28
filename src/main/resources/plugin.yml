@@ -12,3 +12,6 @@ commands:
   get:
     description: makes get request
     usage: /<command>
+  kit:
+    description: opens main kit GUI
+    usage: /<command>
