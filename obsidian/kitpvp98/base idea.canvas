@@ -47,14 +47,14 @@
 		{"type":"text","text":"sound and messages on teleporting","id":"cd019e5d0696088c","x":209,"y":620,"width":250,"height":60},
 		{"type":"text","text":".","id":"b4f87a79e69bd106","x":-350,"y":-195,"width":50,"height":60},
 		{"type":"text","text":"orange: TODO\nred: TO define\ngreen: DONE\nyellow: TODO long term\n\nname: kitpvp98\nversion: 1.19\n\nlow prio:\n- stats\n- kit share via main server\n- settings (kit)\n- general settings","id":"34227cfef26768e5","x":-1225,"y":-949,"width":380,"height":490,"color":"5"},
-		{"id":"e4df65347918d477","x":-1040,"y":957,"width":250,"height":118,"color":"2","type":"text","text":"Run command. To copy webstore link or running a command, etc"},
-		{"id":"0762204f879f542c","x":-780,"y":-233,"width":250,"height":126,"color":"2","type":"text","text":"Can be empty on first run but having to be set by admin.\n`aa premake <kitname>`"},
-		{"id":"d2f4420e47cdc2d0","x":-76,"y":-360,"width":87,"height":60,"color":"2","type":"text","text":"Files\n"},
-		{"id":"a3bd1b93400f1dce","x":-191,"y":-477,"width":127,"height":57,"type":"text","text":"config.yml\n"},
-		{"id":"867dbdfee00f2fd2","x":-5,"y":-478,"width":137,"height":58,"type":"text","text":"arenas.yml"},
-		{"id":"765be4d97293d6f5","x":704,"y":-247,"width":272,"height":115,"color":"2","type":"text","text":"`/aa` is best as base command. While `/arsenal` & `/architect` can be used also"},
-		{"id":"2c64f835a6c7dc8e","x":300,"y":1200,"width":656,"height":122,"type":"text","text":"```yml\n##Queue\njoin-queue-chat: \"&fYou have joined <queue-type>\"\nleave-queue-chat: \"&fYou have left <queue-type>\"\n```"},
-		{"id":"31ce965b8a211adb","x":-1700,"y":-255,"width":278,"height":110,"color":"#ffffff","type":"text","text":"working on this -HR\n(we should also really have a trello haha)"}
+		{"type":"text","text":"Run command. To copy webstore link or running a command, etc","id":"e4df65347918d477","x":-1040,"y":957,"width":250,"height":118,"color":"2"},
+		{"type":"text","text":"Can be empty on first run but having to be set by admin.\n`aa premake <kitname>`","id":"0762204f879f542c","x":-780,"y":-233,"width":250,"height":126,"color":"2"},
+		{"type":"text","text":"Files\n","id":"d2f4420e47cdc2d0","x":-76,"y":-360,"width":87,"height":60,"color":"2"},
+		{"type":"text","text":"config.yml\n","id":"a3bd1b93400f1dce","x":-191,"y":-477,"width":127,"height":57},
+		{"type":"text","text":"arenas.yml","id":"867dbdfee00f2fd2","x":-5,"y":-478,"width":137,"height":58},
+		{"type":"text","text":"`/aa` is best as base command. While `/arsenal` & `/architect` can be used also","id":"765be4d97293d6f5","x":704,"y":-247,"width":272,"height":115,"color":"2"},
+		{"type":"text","text":"```yml\n##Queue\njoin-queue-chat: \"&fYou have joined <queue-type>\"\nleave-queue-chat: \"&fYou have left <queue-type>\"\n```","id":"2c64f835a6c7dc8e","x":300,"y":1200,"width":656,"height":122},
+		{"type":"text","text":"working on this -HR\n(we should also really have a trello haha)","id":"31ce965b8a211adb","x":-1700,"y":-255,"width":278,"height":110,"color":"#ffffff"}
 	],
 	"edges":[
 		{"id":"1285d2ffa977f449","fromNode":"904bafbac6f0a9ab","fromSide":"bottom","toNode":"bdc95cfb96f0f3b6","toSide":"top"},

@@ -30,9 +30,9 @@
               "state": {
                 "file": "base idea.canvas",
                 "viewState": {
-                  "x": -99.79551786945365,
-                  "y": 449.5973897301146,
-                  "zoom": -0.8397209430244714
+                  "x": 23.659958484280764,
+                  "y": -163.5181375317926,
+                  "zoom": -1.0433890973534476
                 }
               }
             }
@@ -100,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "1b358a76f57aee89",
@@ -177,13 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a023f45a8550847c",
+  "active": "24ba2cc282d1c256",
   "lastOpenFiles": [
-    "main.canvas",
+    "idea.png",
     "base idea.canvas",
+    "main.canvas",
     "kitCreator.png",
     "kit_selector.png",
-    "idea.png",
     "example_duels.png",
     "itemSelectorGui.md",
     "matchsGui.md",
