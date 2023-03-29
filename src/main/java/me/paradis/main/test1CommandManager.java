@@ -10,19 +10,41 @@ import java.io.InputStream;
 
 public class test1CommandManager implements CommandExecutor {
 
-    private final _98 instance = _98.getInstance();
+    private final kitpvp98 instance = kitpvp98.getInstance();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // TODO Auto-generated method stub
-        Player p = (Player) sender;
-        sender.sendMessage("test1");
 
-        InputStream stream = _98.getInstance().getResource("gui.xml");
+
+
+
+        Player p = (Player) sender;
+        sender.sendMessage("test123123");
+
+        if (args.length == 0) {
+            return false;
+        }
+
+
+        InputStream stream = kitpvp98.getInstance().getResource("gui.xml");
         System.out.println(stream);
         ChestGui gui = ChestGui.load(this, stream);
 
-        gui.setOnGlobalClick(event -> event.setCancelled(true));
+        gui.setOnGlobalClick(event -> {
+            System.out.println(event.getCurrentItem());
+
+            // if event is 0 1 or 2
+            if (event.getSlot() == 0 || event.getSlot() == 1 || event.getSlot() == 2) {
+                event.getWhoClicked().getInventory().addItem(event.getCurrentItem());
+            } else if (event.getSlot() == 54) {
+                System.out.println("next page");
+                event.setCancelled(true);
+            } else {
+                event.setCancelled(true);
+            }
+
+        });
 
         gui.show(p);
 

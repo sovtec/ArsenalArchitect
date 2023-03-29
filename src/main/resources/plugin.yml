@@ -1,6 +1,6 @@
-name: 98
+name: kitpvp98
 version: '${project.version}'
-main: me.paradis.main._98
+main: me.paradis.main.kitpvp98
 api-version: 1.18
 commands:
   test:

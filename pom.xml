@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.paradis</groupId>
-    <artifactId>Main</artifactId>
+    <artifactId>kitpvp98</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>98</name>
+    <name>kitpvp98</name>
 
     <properties>
         <java.version>1.8</java.version>
@@ -43,6 +43,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <outputDirectory>C:\Users\Lucas\Escritorio\games\mc\1.18.2\plugins</outputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -74,11 +82,6 @@
             <groupId>com.github.stefvanschie.inventoryframework</groupId>
             <artifactId>IF</artifactId>
             <version>0.10.8</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.stefvanschie.inventoryframework</groupId>
-            <artifactId>IF</artifactId>
-            <version>0.10.5</version>
         </dependency>
     </dependencies>
 </project>

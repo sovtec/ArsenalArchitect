@@ -1,16 +1,19 @@
-<chestgui title="Navigator" rows="3">
-    <outlinepane x="0" y="0" length="9" height="3" priority="lowest" repeat="true">
+<chestgui title="Shop" rows="6">
+    <paginatedpane x="0" y="0" length="9" height="5">
+        <page>
+            <outlinepane x="0" y="0" length="9" height="5">
+                <item id="golden_sword" />
+                <item id="light_gray_glazed_terracotta" amount="16" />
+                <item id="cooked_cod" amount="64" />
+            </outlinepane>
+        </page>
+    </paginatedpane>
+    <outlinepane x="0" y="5" length="9" height="1" priority="lowest" repeat="true">
         <item id="black_stained_glass_pane" />
     </outlinepane>
-    <outlinepane x="3" y="1" length="3" height="1">
-        <item id="chest">
-            <displayname>Shop</displayname>
-        </item>
-        <item id="beacon">
-            <displayname>Spawn</displayname>
-        </item>
-        <item id="red_bed">
-            <displayname>Home</displayname>
-        </item>
-    </outlinepane>
+    <staticpane x="0" y="5" length="9" height="1">
+        <item id="red_wool" x="0" y="0" />
+        <item id="barrier" x="4" y="0" />
+        <item id="green_wool" x="8" y="0" />
+    </staticpane>
 </chestgui>
