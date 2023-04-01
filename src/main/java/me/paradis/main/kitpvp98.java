@@ -24,7 +24,7 @@ public final class kitpvp98 extends JavaPlugin implements CommandExecutor {
         instance = this;
 
         //String url = "jdbc:mysql://127.0.0.1:3306/kitpvp98";
-        
+
         String user = "root";
         String password = "";
 
