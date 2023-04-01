@@ -1,4 +1,4 @@
-package me.paradis.main;
+package me.paradis.main.extras;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

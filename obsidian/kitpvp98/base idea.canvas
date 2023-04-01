@@ -57,7 +57,6 @@
 		{"type":"text","text":"messages, sounds and titles","id":"57ef1d8dfeaa769b","x":-1339,"y":1552,"width":250,"height":60},
 		{"type":"text","text":"handler\n\neach time somethings wants to be added we call this handler that will do X action ","id":"7dbf0ddeb6c99513","x":-1138,"y":1683,"width":250,"height":167},
 		{"type":"text","text":"hard code messages, sounds, titles by calling handler and edit messages with command\n\n/aa editmessage MESSAGEID newMessage","id":"be68e720505330cd","x":-800,"y":1683,"width":377,"height":167},
-		{"type":"text","text":"handler(sound, \"soundID\")","id":"fe6be14738588fda","x":-1339,"y":1380,"width":250,"height":60},
 		{"type":"text","text":"reset dev to 1.19","id":"295f4a3378f737cd","x":-1225,"y":-1009,"width":250,"height":60},
 		{"type":"text","text":"/aa editKitGui 0","id":"1ef5b9206d439375","x":-2665,"y":622,"width":250,"height":60},
 		{"type":"file","file":"example_duels.png","id":"43daf5d89eca46f3","x":-30,"y":860,"width":400,"height":215},
@@ -82,7 +81,11 @@
 		{"type":"text","text":"Kit Selector","id":"c9d9f5d342b0db13","x":-116,"y":280,"width":140,"height":60},
 		{"type":"text","text":"Item Selector","id":"670b680cc09d4ffb","x":-126,"y":410,"width":160,"height":50},
 		{"type":"text","text":"40","id":"982d2f4f194bc777","x":81,"y":630,"width":89,"height":50},
-		{"type":"text","text":"define method to use (method defined in green)","id":"775a05147a59b9af","x":880,"y":658,"width":259,"height":75,"color":"2"}
+		{"type":"text","text":"define method to use (method defined in green)","id":"775a05147a59b9af","x":880,"y":658,"width":259,"height":75,"color":"2"},
+		{"type":"text","text":"soundHandler(sound, \"soundID\")","id":"fe6be14738588fda","x":-1339,"y":1295,"width":250,"height":60},
+		{"type":"text","text":"messageHandler","id":"6b018f62a2f69335","x":-1165,"y":1390,"width":250,"height":60},
+		{"type":"text","text":"titleHandler","id":"bf2227bf42be87a7","x":-1591,"y":1332,"width":250,"height":60},
+		{"id":"bc321e3659aca3eb","x":-935,"y":1473,"width":250,"height":60,"type":"text","text":"gets messages from config"}
 	],
 	"edges":[
 		{"id":"1285d2ffa977f449","fromNode":"904bafbac6f0a9ab","fromSide":"bottom","toNode":"bdc95cfb96f0f3b6","toSide":"top"},
@@ -165,6 +168,8 @@
 		{"id":"f7d749363b755aba","fromNode":"7dbf0ddeb6c99513","fromSide":"right","toNode":"be68e720505330cd","toSide":"left"},
 		{"id":"8509bd8b5471172f","fromNode":"fe6be14738588fda","fromSide":"bottom","toNode":"57ef1d8dfeaa769b","toSide":"top"},
 		{"id":"dcd1a50eba50cd23","fromNode":"1ef5b9206d439375","fromSide":"bottom","toNode":"a807a4693029060f","toSide":"top"},
-		{"id":"f4c160461fe0d227","fromNode":"43daf5d89eca46f3","fromSide":"bottom","toNode":"8ce9e91f631c32d8","toSide":"top"}
+		{"id":"f4c160461fe0d227","fromNode":"43daf5d89eca46f3","fromSide":"bottom","toNode":"8ce9e91f631c32d8","toSide":"top"},
+		{"id":"6b4e1ae8c37cd97d","fromNode":"6b018f62a2f69335","fromSide":"bottom","toNode":"57ef1d8dfeaa769b","toSide":"top"},
+		{"id":"da10f931e4509b7b","fromNode":"6b018f62a2f69335","fromSide":"bottom","toNode":"bc321e3659aca3eb","toSide":"top"}
 	]
 }
