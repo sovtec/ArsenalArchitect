@@ -11,6 +11,8 @@ public final class Kitpvp98 extends JavaPlugin implements CommandExecutor {
 
     private static Kitpvp98 instance;
     private static SQLManager sqlManager;
+    String url = "jdbc:sqlite:kitpvp98.db";
+
     FileConfiguration c = getConfig();
 
 
@@ -28,7 +30,6 @@ public final class Kitpvp98 extends JavaPlugin implements CommandExecutor {
         // register command /aa
         getCommand("aa").setExecutor(new CommandManager());
 
-        String url = "jdbc:sqlite:kitpvp98.db";
         try {
             sqlManager = new SQLManager(url);
 
