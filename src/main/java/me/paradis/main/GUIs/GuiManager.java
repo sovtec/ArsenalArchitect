@@ -57,14 +57,10 @@ public class GuiManager {
     }
 
     private List<String> getPlayerKitNames(Player player) {
-        List<String> kitNames = new ArrayList<>(3); // initialize with capacity 3
+        List<String> kitNames;
         try {
-            ResultSet resultSet = Kitpvp98.getSqlManager().getKits(player.getUniqueId().toString());
-            while (resultSet.next()) {
-                String kitName = resultSet.getString("name");
-                player.sendMessage("kit name: " + kitName);
-                kitNames.add(kitName);
-            }
+            System.out.println(player.getUniqueId());
+            kitNames = Kitpvp98.getSqlManager().getKits(player.getUniqueId().toString());
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -74,7 +70,8 @@ public class GuiManager {
             kitNames.add("[undefined]"); // #HR rename default kit name
 
         }
-        return kitNames;
+        // return first 3 kits
+        return kitNames.subList(0, 3);
     }
 
 }
