@@ -1,27 +1,47 @@
 package me.paradis.main.sql;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import javax.annotation.Nullable;
+import java.sql.*;
 
 public class SQLManager {
 
-    Connection connection;
+    private Connection connection;
     String url;
 
     public SQLManager(String url) throws SQLException {
         this.url = url;
-        this.connection = getConnection();
+        connection = getConnection();
 
     }
 
-    public static void setup() throws SQLException {
+    public void setup() throws SQLException {
         // setup database
+
+        // Create a query with table players and columns id int autoincrement primary key, name varchar and uuid as varchar
+        String query = "CREATE TABLE IF NOT EXISTS players (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, uuid VARCHAR);";
+        getConnection().createStatement().execute(query);
+
     }
 
     // execute query
     public void executeQuery(String query) throws SQLException {
         //connection.prepareStatement(query).executeUpdate(); remove this
+    }
+
+    public void saveNewPlayer(String name, String uuid) throws SQLException {
+        PreparedStatement statement = getConnection().prepareStatement("INSERT INTO players (name, uuid) VALUES (?, ?);");
+        statement.setString(1, name);
+        statement.setString(2, uuid);
+        statement.executeUpdate();
+        statement.close();
+    }
+
+    public ResultSet getAllPlayers() throws SQLException {
+        PreparedStatement statement = getConnection().prepareStatement("SELECT * FROM players;");
+        ResultSet resultSet = statement.executeQuery();
+        statement.close();
+
+        return resultSet;
     }
 
     public Connection getConnection() throws SQLException {

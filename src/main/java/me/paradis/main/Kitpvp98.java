@@ -27,19 +27,18 @@ public final class Kitpvp98 extends JavaPlugin implements CommandExecutor {
 
         addDefaults();
 
+
+
         // register command /aa
         getCommand("aa").setExecutor(new CommandManager());
 
         try {
             sqlManager = new SQLManager(url);
-
-
-
+            sqlManager.setup();
+            System.out.println("Connected to database.");
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e); // TODO log error
         }
-
-
     }
     @Override
     public void onDisable() {

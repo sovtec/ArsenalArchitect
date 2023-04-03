@@ -1,6 +1,6 @@
 name: kitpvp98
 version: '${project.version}'
-main: me.paradis.main.kitpvp98
+main: me.paradis.main.Kitpvp98
 api-version: 1.18
 author: paradis
 prefix: kitpvp98
