@@ -16,10 +16,14 @@ public class SQLManager {
 
     public void setup() throws SQLException {
         // setup database
+        // tested in https://sqliteonline.com
 
         // Create a query with table players and columns id int autoincrement primary key, name varchar and uuid as varchar
-        String query = "CREATE TABLE IF NOT EXISTS players (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, uuid VARCHAR);";
-        getConnection().createStatement().execute(query);
+        String createPlayers = "CREATE TABLE IF NOT EXISTS players (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, uuid VARCHAR);";
+        getConnection().createStatement().execute(createPlayers);
+        String createKits = "CREATE TABLE IF NOT EXISTS kits (id INTEGER PRIMARY KEY AUTOINCREMENT, player_id INTEGER, name VARCHAR, FOREIGN KEY (player_id) REFERENCES players(id));";
+        getConnection().createStatement().execute(createKits);
+
 
     }
 
@@ -42,6 +46,27 @@ public class SQLManager {
         statement.close();
 
         return resultSet;
+    }
+
+    public ResultSet getKits(String uuid) throws SQLException {
+        PreparedStatement statement = getConnection().prepareStatement("SELECT name FROM kits WHERE player_id = ?");
+        statement.setString(1, uuid);
+        ResultSet resultSet = statement.executeQuery();
+        statement.close();
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString("name"));
+            System.out.println(resultSet.getString("player_id"));
+        }
+
+        return resultSet;
+    }
+
+    public void saveNewKit(String name, String uuid) throws SQLException {
+        PreparedStatement statement = getConnection().prepareStatement("INSERT INTO kits (player_id, name) VALUES (?, ?);");
+        statement.setString(1, uuid);
+        statement.setString(2, name);
+        statement.executeUpdate();
+        statement.close();
     }
 
     public Connection getConnection() throws SQLException {

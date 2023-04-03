@@ -1,5 +1,6 @@
 package me.paradis.main;
 
+import com.github.stefvanschie.inventoryframework.gui.type.util.Gui;
 import me.paradis.main.GUIs.GuiManager;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -25,6 +26,19 @@ public class CommandManager implements CommandExecutor {
         Player p = (Player) sender;
         //Kitpvp98.getSqlManager().saveNewPlayer(p.getName(), p.getUniqueId().toString());
         //ResultSet resultSet = Kitpvp98.getSqlManager().getAllPlayers();
+        if (args.length == 0) { // #HR set message,sound and perm if needed
+            new GuiManager(p);
+        } else {
+            try {
+                Kitpvp98.getSqlManager().saveNewKit(args[0], p.getUniqueId().toString());
+                p.sendMessage("You created a new kit called " + args[0]);
+            } catch (SQLException e) {
+                p.sendMessage(" ERROR: " + e.getMessage());
+                throw new RuntimeException(e);
+            }
+
+
+        }
 
 
         return true;
