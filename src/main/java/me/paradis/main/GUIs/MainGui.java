@@ -9,14 +9,12 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
-public class GuiManager {
+public class MainGui {
 
-    public GuiManager(Player p){
+    public MainGui(Player p){
         // ideally player never leaves the gui until done with all actions
 
         // Kitpvp98.getSqlManager().executeQuery("SELECT * FROM players WHERE uuid = '" + p.getUniqueId().toString() + "'");
