@@ -1,14 +1,11 @@
 package me.paradis.main;
 
-import com.github.stefvanschie.inventoryframework.gui.type.util.Gui;
-import me.paradis.main.GUIs.GuiManager;
+import me.paradis.main.GUIs.MainGui;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CommandManager implements CommandExecutor {
@@ -27,7 +24,7 @@ public class CommandManager implements CommandExecutor {
         //Kitpvp98.getSqlManager().saveNewPlayer(p.getName(), p.getUniqueId().toString());
         //ResultSet resultSet = Kitpvp98.getSqlManager().getAllPlayers();
         if (args.length == 0) { // #HR set message,sound and perm if needed
-            new GuiManager(p);
+            new MainGui(p);
         } else {
             try {
                 Kitpvp98.getSqlManager().saveNewKit(args[0], p.getUniqueId().toString());
