@@ -1,62 +1,22 @@
-package me.paradis.main;
+package me.paradis.main.sql;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-import java.sql.*;
-
-public final class kitpvp98 extends JavaPlugin implements CommandExecutor {
-
-    private static kitpvp98 instance;
-
-    FileConfiguration c = getConfig();
-    String url = "jdbc:sqlite:kitpvp98.db";
+public class SqlTest {
 
     private Connection connection;
 
+    String url = "jdbc:sqlite:kitpvp98.db";
+    //String url = "jdbc:mysql://127.0.0.1:3306/kitpvp98";
 
-    @Override
-    public void onEnable() {
-        instance = this;
+    String user = "root";
+    String password = "";
 
-        //String url = "jdbc:mysql://127.0.0.1:3306/kitpvp98";
-
-        String user = "root";
-        String password = "";
-
-        // connect to database
-        try {
-            //Connection connection = DriverManager.getConnection(url);
-            getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS players (uuid VARCHAR(36), username VARCHAR(16))").executeUpdate();
-            System.out.println("Connected to database and created table.");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-            System.out.println("failed to connect to database");
-        }
-
-
-        // Plugin startup logic
-        System.out.println("=========");
-        System.out.println("starting kitpvp98");
-        System.out.println("=========");
-
-        addDefaults();
-
-        //getCommand("test1").setExecutor(new test1CommandManager());
-        // register command /test in this file that inserts a player into the database
-        getCommand("test").setExecutor(this);
-
-
-    }
+    //getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS players (uuid VARCHAR(36), username VARCHAR(16))").executeUpdate();
 
     public Connection getConnection() throws SQLException {
-
         if(connection != null){
             return connection;
         }
@@ -71,6 +31,8 @@ public final class kitpvp98 extends JavaPlugin implements CommandExecutor {
         return connection;
     }
 
+    // notes keep in here for future reference
+    /*
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("test")) {
@@ -124,33 +86,5 @@ public final class kitpvp98 extends JavaPlugin implements CommandExecutor {
         }
         return false;
     }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-        System.out.println("stopping kitpvp98");
-        saveConfig();
-    }
-
-    public void addDefaults(){
-        this.saveDefaultConfig();
-
-
-        c.options().copyDefaults(true);
-
-        saveConfig();
-    }
-
-    public static kitpvp98 getInstance() {
-        return instance;
-    }
-
+     */
 }
-
-
-/*
-                        // remove nbti tag PublicBukkitValues from item
-                        NBTItem nbtItem = new NBTItem(item);
-                        nbtItem.removeKey("PublicBukkitValues");
-                        item = nbtItem.getItem();
- */

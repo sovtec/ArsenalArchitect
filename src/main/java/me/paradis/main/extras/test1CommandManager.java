@@ -1,6 +1,7 @@
-package me.paradis.main;
+package me.paradis.main.extras;
 
 import com.github.stefvanschie.inventoryframework.gui.type.ChestGui;
+import me.paradis.main.Kitpvp98;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -10,7 +11,7 @@ import java.io.InputStream;
 
 public class test1CommandManager implements CommandExecutor {
 
-    private final kitpvp98 instance = kitpvp98.getInstance();
+    private final Kitpvp98 instance = Kitpvp98.getInstance();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -27,7 +28,7 @@ public class test1CommandManager implements CommandExecutor {
         }
 
 
-        InputStream stream = kitpvp98.getInstance().getResource("gui.xml");
+        InputStream stream = Kitpvp98.getInstance().getResource("gui.xml");
         System.out.println(stream);
         ChestGui gui = ChestGui.load(this, stream);
 

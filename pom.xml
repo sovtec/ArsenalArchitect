@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.paradis</groupId>
-    <artifactId>kitpvp98</artifactId>
+    <artifactId>Kitpvp98</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>kitpvp98</name>
+    <name>Kitpvp98</name>
 
     <properties>
         <java.version>1.8</java.version>
