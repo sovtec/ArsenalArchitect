@@ -41,9 +41,9 @@ public class CommandManager implements CommandExecutor {
             try {
                 SQLManager sql = Kitpvp98.getSqlManager();
 
-                sql.saveNewKitItem(1,3, Items.serialize(item));
-                sql.saveNewKitItem(1,5, Items.serialize(item1));
-                sql.saveNewKitItem(1,7, Items.serialize(item2));
+                sql.saveNewKitItem(1,2, Items.serialize(item));
+                sql.saveNewKitItem(1,4, Items.serialize(item1));
+                sql.saveNewKitItem(1,6, Items.serialize(item2));
 
                 p.sendMessage("saved items");
             } catch (SQLException | IOException e) {
