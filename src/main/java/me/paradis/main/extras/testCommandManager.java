@@ -1,11 +1,11 @@
-package me.paradis.main.extras;
+package me.paradis.main;
 
 import com.github.stefvanschie.inventoryframework.gui.GuiItem;
 import com.github.stefvanschie.inventoryframework.gui.type.ChestGui;
 import com.github.stefvanschie.inventoryframework.pane.OutlinePane;
 import com.github.stefvanschie.inventoryframework.pane.Pane;
 import com.github.stefvanschie.inventoryframework.pane.StaticPane;
-import me.paradis.main.Kitpvp98;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class testCommandManager implements CommandExecutor {
 
-    private FileConfiguration c = Kitpvp98.getInstance().getConfig();
+    private FileConfiguration c = arsenalArchitect.getInstance().getConfig();
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // TODO Auto-generated method stub
