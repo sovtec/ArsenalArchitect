@@ -1,17 +1,13 @@
-name: 98
+name: kitpvp98
 version: '${project.version}'
-main: me.paradis.main._98
+main: me.paradis.main.Kitpvp98
 api-version: 1.18
+author: paradis
+prefix: kitpvp98
+
 commands:
-  test:
-    description: opens main gui
-    usage: /<command>
-  test1:
-    description: opens main gui
-    usage: /<command>
-  get:
-    description: makes get request
-    usage: /<command>
-  kit:
-    description: opens main kit GUI
-    usage: /<command>
+  aa:
+    description: handles main functionality
+    usage: "Usage: /aa"
+    aliases: [arsenal, architect]
+    permission: kitpvp98.aa

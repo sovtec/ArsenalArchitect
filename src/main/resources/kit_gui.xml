@@ -1,6 +1,0 @@
-<!-- Filled up with gray glass panes -->
-<chestgui title="Kit Selector" rows="6">
-    <outlinepane x="0" y="0" length="9" height="6" priority="lowest" repeat="true">
-        <item id="gray_stained_glass_pane" />
-    </outlinepane>
-</chestgui>
