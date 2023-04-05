@@ -21,9 +21,9 @@ public final class Kitpvp98 extends JavaPlugin implements CommandExecutor {
         instance = this;
 
         // Plugin startup logic
-        System.out.println("=========");
-        System.out.println("starting kitpvp98");
-        System.out.println("=========");
+        getLogger().info("=========");
+        getLogger().info("Starting ArsenalArchitect");
+        getLogger().info("=========");
 
         addDefaults();
 
